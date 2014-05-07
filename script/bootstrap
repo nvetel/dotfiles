@@ -103,4 +103,10 @@ install_dotfiles () {
   done
 }
 
+clone_vim_submodules () {
+  git submodule init
+  git submodule update
+}
+
 install_dotfiles
+clone_vim_submodules
