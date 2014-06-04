@@ -50,7 +50,7 @@ map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
 
 " set bash-like autocompletion
-set wildmode=list
+set wildmode=list:longest
 
 " vim-ruby
 set nocompatible
