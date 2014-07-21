@@ -109,5 +109,37 @@ clone_vim_submodules () {
   git submodule update
 }
 
+install_powerline_fonts () {
+  # source: https://powerline.readthedocs.org/en/latest/installation/linux.html#font-installation
+
+  if ! [ -d ~/.fonts ]
+    then mkdir ~/.fonts
+  fi
+
+  if ! [ -f ~/.fonts/PowerlineSymbols.otf ]
+    then wget -P ~/.fonts/ https://github.com/Lokaltog/powerline/raw/develop/font/PowerlineSymbols.otf
+  fi
+
+  fc-cache -vf ~/.fonts
+
+  if ! [ -d ~/.fonts.conf.d ]
+    then mkdir ~/.fonts.conf.d
+  fi
+
+  if ! [ -f ~/.fonts.conf.d/10-powerline-symbols.conf ]
+    then wget -P ~/.fonts.conf.d/ https://github.com/Lokaltog/powerline/raw/develop/font/10-powerline-symbols.conf
+  fi
+}
+
+install_solarized () {
+  if ! [ -d ~/gnome-terminal-colors-solarized ]
+    then git clone https://github.com/Anthony25/gnome-terminal-colors-solarized.git ~/gnome-terminal-colors-solarized
+  fi
+
+  bash ~/gnome-terminal-colors-solarized/set_dark.sh
+}
+
 clone_vim_submodules
 install_dotfiles
+install_powerline_fonts
+install_solarized
