@@ -15,6 +15,10 @@ install_rbenv () {
 install_ruby_build () {
   if ! [ -d ~/.rbenv/plugins/ruby-build ]; then
     git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
+
+    # Suggested build environment
+    # https://github.com/sstephenson/ruby-build/wiki
+    sudo apt-get install autoconf bison build-essential libssl-dev libyaml-dev libreadline6 libreadline6-dev zlib1g zlib1g-dev
   fi
 }
 
