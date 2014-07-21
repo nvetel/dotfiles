@@ -4,8 +4,6 @@
 # 
 # altered from https://github.com/holman/dotfiles
 
-DOTFILES_ROOT="`pwd`"
-
 set -e
 
 echo ''
@@ -36,7 +34,7 @@ link_files () {
 install_dotfiles () {
   info 'installing dotfiles'
 
-  dotfiles="vimrc vim"
+  dotfiles="vimrc vim gitconfig"
 
   overwrite_all=false
   backup_all=false
@@ -132,11 +130,11 @@ install_powerline_fonts () {
 }
 
 install_solarized () {
-  if ! [ -d ~/gnome-terminal-colors-solarized ]
-    then git clone https://github.com/Anthony25/gnome-terminal-colors-solarized.git ~/gnome-terminal-colors-solarized
+  if ! [ -d ~/.gnome-terminal-colors-solarized ]
+    then git clone https://github.com/Anthony25/gnome-terminal-colors-solarized.git ~/.gnome-terminal-colors-solarized
   fi
 
-  bash ~/gnome-terminal-colors-solarized/set_dark.sh
+  bash ~/.gnome-terminal-colors-solarized/set_dark.sh
 }
 
 clone_vim_submodules
