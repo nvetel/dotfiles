@@ -1,24 +1,24 @@
-[submodule "vim/bundle/ctrlp.vim"]
-	path = vim/bundle/ctrlp.vim
+[submodule "dotfiles/vim/bundle/ctrlp.vim"]
+	path = dotfiles/vim/bundle/ctrlp.vim
 	url = https://github.com/kien/ctrlp.vim
-[submodule "vim/bundle/vim-bundler"]
-	path = vim/bundle/vim-bundler
+[submodule "dotfiles/vim/bundle/vim-bundler"]
+	path = dotfiles/vim/bundle/vim-bundler
 	url = https://github.com/tpope/vim-bundler
-[submodule "vim/bundle/vim-coffee-script"]
-	path = vim/bundle/vim-coffee-script
+[submodule "dotfiles/vim/bundle/vim-coffee-script"]
+	path = dotfiles/vim/bundle/vim-coffee-script
 	url = https://github.com/kchmck/vim-coffee-script
-[submodule "vim/bundle/vim-rails"]
-	path = vim/bundle/vim-rails
+[submodule "dotfiles/vim/bundle/vim-rails"]
+	path = dotfiles/vim/bundle/vim-rails
 	url = https://github.com/tpope/vim-rails
-[submodule "vim/bundle/vim-ruby"]
-	path = vim/bundle/vim-ruby
+[submodule "dotfiles/vim/bundle/vim-ruby"]
+	path = dotfiles/vim/bundle/vim-ruby
 	url = https://github.com/vim-ruby/vim-ruby
-[submodule "vim/bundle/vim-slim"]
-	path = vim/bundle/vim-slim
+[submodule "dotfiles/vim/bundle/vim-slim"]
+	path = dotfiles/vim/bundle/vim-slim
 	url = https://github.com/slim-template/vim-slim
-[submodule "vim/bundle/vim-surround"]
-	path = vim/bundle/vim-surround
+[submodule "dotfiles/vim/bundle/vim-surround"]
+	path = dotfiles/vim/bundle/vim-surround
 	url = https://github.com/tpope/vim-surround
-[submodule "vim/bundle/vim-markdown"]
-	path = vim/bundle/vim-markdown
+[submodule "dotfiles/vim/bundle/vim-markdown"]
+	path = dotfiles/vim/bundle/vim-markdown
 	url = https://github.com/plasticboy/vim-markdown.git
