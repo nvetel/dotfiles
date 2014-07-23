@@ -22,3 +22,18 @@
 [submodule "dotfiles/vim/bundle/vim-markdown"]
 	path = dotfiles/vim/bundle/vim-markdown
 	url = https://github.com/plasticboy/vim-markdown.git
+[submodule "dotfiles/vim/bundle/vim-colors-solarized"]
+	path = dotfiles/vim/bundle/vim-colors-solarized
+	url = https://github.com/altercation/vim-colors-solarized.git
+[submodule "dotfiles/vim/bundle/vim-airline"]
+	path = dotfiles/vim/bundle/vim-airline
+	url = https://github.com/bling/vim-airline.git
+[submodule "dotfiles/vim/bundle/vim-rspec"]
+	path = dotfiles/vim/bundle/vim-rspec
+	url = https://github.com/thoughtbot/vim-rspec.git
+[submodule "dotfiles/vim/bundle/vim-fugitive"]
+	path = dotfiles/vim/bundle/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive
+[submodule "dotfiles/vim/bundle/vim-gitgutter"]
+	path = dotfiles/vim/bundle/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter.git
