@@ -82,12 +82,22 @@ install_task () {
   title=$2
 
   process "$title"
-  $task > $log_file
+  $task >> $log_file
   success "$title"
 }
 
-install_task install_dependencies "install dependencies"
-install_task install_submodules "install submodules"
+install_task_term () {
+  task=$1
+  title=$2
+
+  tput smcup
+  $task | tee -a $log_file
+  tput rmcup
+  success "$title"
+}
+
+install_task_term install_dependencies "install dependencies"
+install_task_term install_submodules "install submodules"
 install_dotfiles
-install_task "install_powerline_fonts" "install powerline fonts"
+install_task_term "install_powerline_fonts" "install powerline fonts"
 install_task install_solarized_for_gnome_terminal "install solarized"
