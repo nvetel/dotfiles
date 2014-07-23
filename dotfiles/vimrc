@@ -44,7 +44,19 @@ xnoremap RTW %s/\s\+$//e
 let g:airline#extensions#tabline#enabled = 1
 
 " Rspec.vim mappings
+
+function! RunCurrentSpecFileWithFocus()
+  if InSpecFile()
+    let l:spec = @% . " --tag @focus"
+    call SetLastSpecCommand(l:spec)
+    call RunSpecs(l:spec)
+  else
+    call RunLastSpec()
+  endif
+endfunction
+
 map <Leader>t :call RunCurrentSpecFile()<CR>
+map <Leader>f :call RunCurrentSpecFileWithFocus()<CR>
 map <Leader>s :call RunNearestSpec()<CR>
 map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
