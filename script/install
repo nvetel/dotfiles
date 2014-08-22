@@ -65,6 +65,14 @@ install_dotfile () {
       done
     fi
   else
+    # si c'est un lien, et donc un lien mort
+    if [ -h $dst ] 
+    then
+      # on le supprime
+      rm -f $dst
+      success "removed dead link $dst"
+    fi
+
     link_files $src $dst
   fi
 }
