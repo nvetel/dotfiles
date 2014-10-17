@@ -40,3 +40,6 @@
 [submodule "script/gnome-terminal-colors-solarized"]
 	path = script/gnome-terminal-colors-solarized
 	url = https://github.com/Anthony25/gnome-terminal-colors-solarized.git
+[submodule "dotfiles/vim/bundle/python-mode"]
+	path = dotfiles/vim/bundle/python-mode
+	url = https://github.com/klen/python-mode
