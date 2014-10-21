@@ -109,3 +109,6 @@ install_task_term install_submodules "install submodules"
 install_dotfiles
 install_task_term "install_powerline_fonts" "install powerline fonts"
 install_task install_solarized_for_gnome_terminal "install solarized"
+
+# in order to update the ~/.bashrc.d files sources
+source ~/.bashrc
