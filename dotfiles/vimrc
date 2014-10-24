@@ -55,12 +55,6 @@ function! RunCurrentSpecFileWithFocus()
   endif
 endfunction
 
-map <Leader>t :call RunCurrentSpecFile()<CR>
-map <Leader>f :call RunCurrentSpecFileWithFocus()<CR>
-map <Leader>s :call RunNearestSpec()<CR>
-map <Leader>l :call RunLastSpec()<CR>
-map <Leader>a :call RunAllSpecs()<CR>
-
 " set bash-like autocompletion
 set wildmode=list:longest
 
