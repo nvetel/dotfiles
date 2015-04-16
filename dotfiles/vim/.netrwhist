@@ -1,6 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
-let g:netrw_dirhist_1='/home/sysadmin/dev/scribe/app/views/end_points'
-let g:netrw_dirhist_2='/home/nico/.dotfiles/dotfiles/vim/bundle'
-let g:netrw_dirhist_3='/home/sysadmin/.dotfiles'
-let g:netrw_dirhist_4='/home/sysadmin/.dotfiles/script'
