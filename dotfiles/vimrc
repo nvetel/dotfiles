@@ -71,3 +71,7 @@ set autoindent " on a new line, autindenting like previous line
 
 imap <C-B> <CR><CR>end<Esc>-cc
 imap <C-F> def <CR>end<Esc>-A
+
+" syntastic
+let g:syntastic_ruby_checkers = ['rubocop']
+let g:syntastic_check_on_open = 1
