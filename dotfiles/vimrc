@@ -12,10 +12,13 @@ colorscheme solarized
 let g:solarized_termcolors=16
 
 " Buffers
-map <F5> :bp<CR>
-map <F6> :bn<CR>
-map <F3> :b#<CR>
 map <F9> :bw<CR>
+nnoremap bl :bn<cr>
+nnoremap bh :bp<cr>
+nnoremap bd :bd<cr>
+
+" Close all the buffers
+nnoremap ba :1,1000 bd!<cr>
 
 " Line number
 set nu
@@ -42,6 +45,7 @@ xnoremap RTW %s/\s\+$//e
 
 " airline buffer appearance
 let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#buffer_nr_show = 1
 
 " Rspec.vim mappings
 
@@ -74,4 +78,7 @@ imap <C-F> def <CR>end<Esc>-A
 
 " syntastic
 let g:syntastic_ruby_checkers = ['rubocop']
-let g:syntastic_check_on_open = 1
+"let g:syntastic_check_on_open = 1
+
+" NERDTree
+map <C-n> :NERDTreeToggle<CR>
