@@ -12,13 +12,8 @@ colorscheme solarized
 let g:solarized_termcolors=16
 
 " Buffers
-map <F9> :bw<CR>
-nnoremap bl :bn<cr>
-nnoremap bh :bp<cr>
-nnoremap bd :bd<cr>
-
-" Close all the buffers
-nnoremap ba :1,1000 bd!<cr>
+nnoremap gb :bn<CR>
+nnoremap gB :bp<CR>
 
 " Line number
 set nu
@@ -81,4 +76,8 @@ let g:syntastic_ruby_checkers = ['rubocop']
 "let g:syntastic_check_on_open = 1
 
 " NERDTree
-map <C-n> :NERDTreeToggle<CR>
+nmap <silent> <C-n> :call g:WorkaroundNERDTreeToggle()<CR>
+
+function! g:WorkaroundNERDTreeToggle()
+  try | NERDTreeToggle | catch | silent! NERDTree | endtry
+endfunction
