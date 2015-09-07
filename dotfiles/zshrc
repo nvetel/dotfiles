@@ -91,3 +91,6 @@ eval "$(rbenv init - zsh)"
 # tmux
 export TERM="screen-256color"
 alias tmux="tmux -2"
+
+# history
+setopt no_sharehistory
