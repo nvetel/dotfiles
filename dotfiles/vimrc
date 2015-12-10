@@ -3,13 +3,13 @@ let g:pathogen_disabled = ['vim-gitgutter']
 execute pathogen#infect()
 
 " to properly display colorschemes
-set t_Co=256
+set t_Co=16
+"set term=screen-256color-bce
+"let g:solarized_termcolors=256
 
-"colorscheme railscasts
 syntax enable
 set background=dark
 colorscheme solarized
-let g:solarized_termcolors=16
 
 " Buffers
 nnoremap gb :bn<CR>
