@@ -1,6 +1,27 @@
-let g:pathogen_disabled = ['vim-gitgutter']
+call plug#begin('~/.vim/plugged')
 
-execute pathogen#infect()
+" Aspect
+Plug 'https://github.com/altercation/vim-colors-solarized.git'
+Plug 'https://github.com/vim-airline/vim-airline.git'
+Plug 'https://github.com/vim-airline/vim-airline-themes.git'
+
+" Ruby
+Plug 'https://github.com/vim-ruby/vim-ruby'
+Plug 'https://github.com/tpope/vim-rails'
+Plug 'https://github.com/thoughtbot/vim-rspec.git'
+Plug 'https://github.com/ngmy/vim-rubocop'
+
+Plug 'https://github.com/kien/ctrlp.vim.git'
+Plug 'https://github.com/scrooloose/nerdtree.git'
+" Plug 'https://github.com/klen/python-mode.git'
+Plug 'https://github.com/kchmck/vim-coffee-script'
+Plug 'https://github.com/slim-template/vim-slim'
+Plug 'https://github.com/plasticboy/vim-markdown.git'
+Plug 'https://github.com/genoma/vim-less.git'
+
+call plug#end()
+
+" Solarized
 
 " to properly display colorschemes
 set t_Co=16
@@ -31,8 +52,7 @@ set foldlevelstart=20
 " Always show statusline
 set laststatus=2
 
-" powerline for ailine
-set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 10
+" powerline for airline
 let g:airline_powerline_fonts = 1
 
 " trailing whitespace
@@ -72,7 +92,7 @@ imap <C-B> <CR><CR>end<Esc>-cc
 imap <C-F> def <CR>end<Esc>-A
 
 " syntastic
-let g:syntastic_ruby_checkers = ['rubocop']
+"let g:syntastic_ruby_checkers = ['rubocop']
 "let g:syntastic_check_on_open = 1
 
 " NERDTree
