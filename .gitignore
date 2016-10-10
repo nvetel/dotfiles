@@ -1,2 +1,3 @@
 *.log
 dotfiles/vim/.netrwhist
+dotfiles/vim/plugged

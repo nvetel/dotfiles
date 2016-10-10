@@ -1,57 +1,6 @@
-[submodule "dotfiles/vim/bundle/ctrlp.vim"]
-	path = dotfiles/vim/bundle/ctrlp.vim
-	url = https://github.com/kien/ctrlp.vim
-[submodule "dotfiles/vim/bundle/vim-bundler"]
-	path = dotfiles/vim/bundle/vim-bundler
-	url = https://github.com/tpope/vim-bundler
-[submodule "dotfiles/vim/bundle/vim-coffee-script"]
-	path = dotfiles/vim/bundle/vim-coffee-script
-	url = https://github.com/kchmck/vim-coffee-script
-[submodule "dotfiles/vim/bundle/vim-rails"]
-	path = dotfiles/vim/bundle/vim-rails
-	url = https://github.com/tpope/vim-rails
-[submodule "dotfiles/vim/bundle/vim-ruby"]
-	path = dotfiles/vim/bundle/vim-ruby
-	url = https://github.com/vim-ruby/vim-ruby
-[submodule "dotfiles/vim/bundle/vim-slim"]
-	path = dotfiles/vim/bundle/vim-slim
-	url = https://github.com/slim-template/vim-slim
-[submodule "dotfiles/vim/bundle/vim-surround"]
-	path = dotfiles/vim/bundle/vim-surround
-	url = https://github.com/tpope/vim-surround
-[submodule "dotfiles/vim/bundle/vim-markdown"]
-	path = dotfiles/vim/bundle/vim-markdown
-	url = https://github.com/plasticboy/vim-markdown.git
-[submodule "dotfiles/vim/bundle/vim-colors-solarized"]
-	path = dotfiles/vim/bundle/vim-colors-solarized
-	url = https://github.com/altercation/vim-colors-solarized.git
-[submodule "dotfiles/vim/bundle/vim-airline"]
-	path = dotfiles/vim/bundle/vim-airline
-	url = https://github.com/bling/vim-airline.git
-[submodule "dotfiles/vim/bundle/vim-rspec"]
-	path = dotfiles/vim/bundle/vim-rspec
-	url = https://github.com/thoughtbot/vim-rspec.git
-[submodule "dotfiles/vim/bundle/vim-fugitive"]
-	path = dotfiles/vim/bundle/vim-fugitive
-	url = https://github.com/tpope/vim-fugitive
-[submodule "dotfiles/vim/bundle/vim-gitgutter"]
-	path = dotfiles/vim/bundle/vim-gitgutter
-	url = https://github.com/airblade/vim-gitgutter.git
 [submodule "script/gnome-terminal-colors-solarized"]
 	path = script/gnome-terminal-colors-solarized
 	url = https://github.com/Anthony25/gnome-terminal-colors-solarized.git
-[submodule "dotfiles/vim/bundle/python-mode"]
-	path = dotfiles/vim/bundle/python-mode
-	url = https://github.com/klen/python-mode
-[submodule "dotfiles/vim/bundle/nerdtree"]
-	path = dotfiles/vim/bundle/nerdtree
-	url = https://github.com/scrooloose/nerdtree.git
-[submodule "dotfiles/vim/bundle/rubocop.vim"]
-	path = dotfiles/vim/bundle/rubocop.vim
-	url = https://github.com/ngmy/vim-rubocop
-[submodule "dotfiles/vim/bundle/syntastic.vim"]
-	path = dotfiles/vim/bundle/syntastic.vim
-	url = https://github.com/scrooloose/syntastic.git
 [submodule "dotfiles/oh-my-zsh"]
 	path = dotfiles/oh-my-zsh
 	url = https://github.com/robbyrussell/oh-my-zsh
