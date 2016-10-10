@@ -1,10 +1,10 @@
 function! RunCurrentFeatureFile()
-  let s:command = "!cucumber " . @%
+  let s:command = "!bundle exec cucumber " . @%
   execute s:command
 endfunction
 
 function! RunNearestFeature()
-  let s:command = "!cucumber " . @% . ":" . line(".")
+  let s:command = "!bundle exec cucumber " . @% . ":" . line(".")
   execute s:command
 endfunction
 
