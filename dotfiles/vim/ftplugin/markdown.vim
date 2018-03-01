@@ -1,2 +1,2 @@
-set colorcolumn=80
-set textwidth=80
+setlocal textwidth=80
+setlocal colorcolumn=80

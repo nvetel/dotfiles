@@ -1,9 +1,0 @@
-[http]
-	sslVerify = false
-[credential]
-	helper = cache --timeout=3600
-[user]
-	name = Nicolas VETEL
-	email = nvetel@sii.fr
-[push]
-	default = simple
