@@ -12,6 +12,9 @@ Plug 'scrooloose/nerdtree'
 Plug 'GEverding/vim-hocon'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'tpope/vim-ragtag'
+Plug 'mfukar/robotframework-vim'
+Plug 'Vimjas/vim-python-pep8-indent'
+Plug 'glench/vim-jinja2-syntax'
 
 " Initialize plugin system
 call plug#end()
@@ -56,3 +59,10 @@ inoremap [<CR> [<CR>]<C-o>O
 ""
 
 set pastetoggle=<F2>
+
+""
+" Quick change window keys
+map <C-H> <C-W>h
+map <C-J> <C-W>j
+map <C-K> <C-W>k
+map <C-L> <C-W>l

@@ -19,3 +19,7 @@ if [ -d $HOME/.bashrc.d ]; then
   done
 fi
 ```
+
+### Plugins VIM
+
+Lancer VIM et jouer la command :PlugInstall
