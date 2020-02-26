@@ -13,7 +13,8 @@ Plug 'GEverding/vim-hocon'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'tpope/vim-ragtag'
 Plug 'mfukar/robotframework-vim'
-Plug 'Vimjas/vim-python-pep8-indent'
+"Plug 'Vimjas/vim-python-pep8-indent'
+Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
 Plug 'glench/vim-jinja2-syntax'
 
 " Initialize plugin system
@@ -66,3 +67,8 @@ map <C-H> <C-W>h
 map <C-J> <C-W>j
 map <C-K> <C-W>k
 map <C-L> <C-W>l
+
+" Python Mode
+" let g:pymode = 0
+let g:pymode_lint = 1
+let g:pymode_lint_on_write = 1
