@@ -1,0 +1,1 @@
+/home/vagrant/.dotfiles/dotfiles/git-prompt.sh

@@ -1,0 +1,2 @@
+# Alias to reopen the last interval
+alias timew-takover='timew continue && timew join @1 @2'

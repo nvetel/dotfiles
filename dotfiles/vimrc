@@ -8,17 +8,18 @@ call plug#begin('~/.vim/plugged')
 Plug 'altercation/vim-colors-solarized'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'scrooloose/nerdtree'
 Plug 'GEverding/vim-hocon'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'tpope/vim-ragtag'
 Plug 'mfukar/robotframework-vim'
-"Plug 'Vimjas/vim-python-pep8-indent'
 Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
 Plug 'glench/vim-jinja2-syntax'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'ryanoasis/vim-devicons'
 Plug 'rbgrouleff/bclose.vim'
+Plug 'dhruvasagar/vim-zoom'
+Plug 'jlanzarotta/bufexplorer'
+Plug 'airblade/vim-gitgutter'
 
 " Initialize plugin system
 call plug#end()
@@ -26,7 +27,7 @@ call plug#end()
 syntax enable
 
 " colorscheme solarized
-let g:solarized_termcolors=256
+" let g:solarized_termcolors=256
 set background=dark
 colorscheme solarized
 
@@ -40,18 +41,13 @@ set autoindent
 " Diplay line numbers
 set nu
 
-" autocompletion settings
+" normal autocompletion settings
 set wildmenu
 set wildmode=list:longest,full
 
 " Show buffer line at top with buffer number with Airline.
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#buffer_nr_show = 1
-
-" NERDTree
-let g:NERDTreeWinSize=50
-"" Ctrl-N focus on NerdTree
-nmap <silent> <C-n> :call g:NERDTreeFocus()<CR>
 
 ""
 " Automatically append closing characters
@@ -65,6 +61,9 @@ inoremap [<CR> [<CR>]<C-o>O
 ""
 
 set pastetoggle=<F2>
+map <F5> :tabmove -1<CR>
+map <F6> :tabmove +1<CR>
+map <C-n> :Ex<CR>
 
 ""
 " Quick change window keys
@@ -98,3 +97,12 @@ endif
 " let g:pymode_lint = 1
 " let g:pymode_lint_on_write = 1
 let g:pymode_lint_cwindow = 0
+" let g:pymode_folding = 1
+" let g:pymode_rope = 1
+
+" Insert autocompletion
+set completeopt=menuone,noinsert
+
+function Git(args)
+  call terminal("git -" . a:args)
+endfunction
