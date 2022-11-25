@@ -1,1 +1,4 @@
 export EDITOR=vim
+export SOLARIZED_BG=dark
+
+source ~/mintty-colors-solarized/sol.$SOLARIZED_BG

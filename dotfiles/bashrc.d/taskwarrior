@@ -1,0 +1,6 @@
+alias task_mon='clear && task && while true; do inotifywait -e modify -r -q /home/vagrant/.task && clear && task; done'
+
+# alias task_start="task $(task next | head -n -2 | fzf --tac | cut -d' ' -f2) start"
+
+#export TASKRC=/home/fsdz0585/.taskrc
+#export TASKDATA=/home/fsdz0585/.task

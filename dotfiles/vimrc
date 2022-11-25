@@ -9,7 +9,6 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'GEverding/vim-hocon'
-Plug 'ctrlpvim/ctrlp.vim'
 Plug 'tpope/vim-ragtag'
 Plug 'mfukar/robotframework-vim'
 Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
@@ -20,16 +19,22 @@ Plug 'dhruvasagar/vim-zoom'
 Plug 'jlanzarotta/bufexplorer'
 Plug 'airblade/vim-gitgutter'
 Plug 'ryanoasis/vim-devicons'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'tpope/vim-fugitive'
 
 " Initialize plugin system
 call plug#end()
 
 syntax enable
 
-" colorscheme solarized
-" let g:solarized_termcolors=256
-set background=dark
 colorscheme solarized
+" let g:solarized_termcolors=256
+if $SOLARIZED_BG == 'light'
+    set background=light
+else
+    set background=dark
+endif
 
 " Tabulation and indentation
 set expandtab
@@ -94,16 +99,37 @@ else
 endif
 
 " Python Mode
-" let g:pymode = 0
-" let g:pymode_lint = 1
-" let g:pymode_lint_on_write = 1
 let g:pymode_lint_cwindow = 0
-" let g:pymode_folding = 1
-" let g:pymode_rope = 1
+let g:pymode_lint_ignore = ["E501"]
 
 " Insert autocompletion
 set completeopt=menuone,noinsert
 
-function Git(args)
-  call terminal("git -" . a:args)
+" function Git(args)
+"   call terminal("git -" . a:args)
+" endfunction
+
+function! Solar_swap()
+    if &background ==? 'dark'
+        set background=light
+        execute "silent !tmux source-file " . shellescape(expand('~/tmux-colors-solarized/tmuxcolors-light.conf'))
+        execute "silent !source ~/mintty-colors-solarized/sol.light"
+    else
+        set background=dark
+        execute "silent !tmux source-file " . shellescape(expand('~/tmux-colors-solarized/tmuxcolors-dark.conf'))
+        execute "silent !source ~/mintty-colors-solarized/sol.dark"
+    endif
+    silent !osascript -e 'tell app "System Events" to keystroke "s" using {shift down, option down, control down}'
 endfunction
+
+command! SolarSwap call Solar_swap()
+
+" FZF
+nnoremap <C-P>  :FZF<CR>
+" cnoremap b<TAB>  Buffers<CR>
+
+" Vim Fugitive
+set statusline+=%{FugitiveStatusline()}
+
+" bufexplorer
+nnoremap ù  :BufExplorer<CR>
