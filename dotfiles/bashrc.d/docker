@@ -1,0 +1,4 @@
+alias drun='docker run -it --env http_proxy --env https_proxy -v $PWD:/app -w /app'
+alias drun_rm='drun --rm'
+alias dbuild='docker build --build-arg http_proxy --build-arg https_proxy'
+alias dimages='docker images | sort -h -k 7'

@@ -1,0 +1,1 @@
+alias mkserve='ln -s -f "$PWD/docs" ~/ && mkdocs serve -a 10.0.2.15:8000 -f ~/mkdocs.yml && rm ~/docs'
