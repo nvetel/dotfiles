@@ -20,6 +20,10 @@ if [ -d $HOME/.bashrc.d ]; then
 fi
 ```
 
+### Plugins tmux
+
+Lancer tmux et jouer prefix + I
+
 ### Plugins VIM
 
 Lancer VIM et jouer la command :PlugInstall
