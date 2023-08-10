@@ -1,0 +1,18 @@
+[core]
+        editor = vim
+        autocrlf = input
+[alias]
+        lg = log --oneline --graph -n 20
+        st = status
+        cane = commit --amend --no-edit
+        apa = add --patch
+        bmd = !git branch --merged | grep -v $(git rev-parse --abbrev-ref HEAD) | xargs git branch -d
+        recent = !git for-each-ref --sort=-committerdate --format='%(refname:short)' refs/heads/ | head -n 100
+        ch = !BRANCH=`git recent | fzf` && git checkout ${BRANCH}
+        cf = !git status -s | grep '^[UMDA]\\{2\\}' | awk '{ print $2 }'
+        edcf = !FILES=`git status -s | grep '^[UMDA]\\{2\\}' | awk '{ print $2 }'` && nvim -O ${FILES}
+        sh = !COMMIT=`git log --oneline --decorate | fzf | awk '{ print $1 }'` && git show ${COMMIT}
+#[apply]
+#       whitespace = fix
+[include]
+	path = .gitconfig-includes.inc
