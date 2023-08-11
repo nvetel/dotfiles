@@ -33,7 +33,12 @@ call plug#end()
 syntax enable
 
 colorscheme solarized
-" let g:solarized_termcolors=256
+
+" Only needed on graphical Ubuntu
+if $DESKTOP_SESSION == 'ubuntu'
+    let g:solarized_termcolors=256
+endif
+
 if $SOLARIZED_BG == 'light'
     set background=light
 else
