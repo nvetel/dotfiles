@@ -1,4 +1,4 @@
-alias k9s=~/k9s/execs/k9s
+alias k=kubectl
 alias krf="kubectl patch --type=json -p '[{ \"op\": \"remove\", \"path\": \"/metadata/finalizers\" }]'"
 
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
