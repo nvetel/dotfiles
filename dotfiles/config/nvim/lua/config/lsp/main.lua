@@ -61,6 +61,9 @@ cmp.setup({
 			luasnip.lsp_expand(args.body)
 		end,
 	},
+	window = {
+		documentation = cmp.config.window.bordered(),
+	},
 	mapping = cmp.mapping.preset.insert({
 		["<C-u>"] = cmp.mapping.scroll_docs(-4), -- Up
 		["<C-d>"] = cmp.mapping.scroll_docs(4), -- Down
@@ -94,3 +97,5 @@ cmp.setup({
 		{ name = "luasnip" },
 	},
 })
+
+require("luasnip.loaders.from_vscode").lazy_load()

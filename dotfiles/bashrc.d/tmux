@@ -1,2 +1,2 @@
 # Old varenv for vim, not needed anymore for nvim
-# export TERM="xterm-256color"
+# export TERM="screen-256color"
