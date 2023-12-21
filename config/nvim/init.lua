@@ -20,11 +20,7 @@ require("lazy").setup({
 	},
 })
 
-require("config/legacy")
-require("config/ui")
-require("config/lsp")
-require("config/mappings")
-require("config/options")
+require("config")
 
 -- Help inline
 local wk = require("which-key")

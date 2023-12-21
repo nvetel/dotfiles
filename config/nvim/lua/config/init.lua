@@ -1,0 +1,6 @@
+require("config/coding")
+require("config/legacy")
+require("config/lsp")
+require("config/mappings")
+require("config/options")
+require("config/ui")

@@ -32,8 +32,6 @@ call plug#end()
 
 syntax enable
 
-" colorscheme solarized
-
 " Only needed on graphical Ubuntu
 if $DESKTOP_SESSION == 'ubuntu'
     let g:solarized_termcolors=256
@@ -44,7 +42,7 @@ if $SOLARIZED_BG == 'light'
 else
     set background=dark
 endif
-colorscheme solarized
+" colorscheme solarized
 "
 " Show buffer line at top with buffer number with Airline.
 let g:airline#extensions#tabline#enabled = 1

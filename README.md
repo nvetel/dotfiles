@@ -7,7 +7,11 @@ dotfiles
 
 ### Plugins tmux
 
-Lancer tmux et jouer prefix + I
+```
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+```
+
+[source](https://github.com/tmux-plugins/tpm#installation)
 
 ### Nerd Fonts
 
