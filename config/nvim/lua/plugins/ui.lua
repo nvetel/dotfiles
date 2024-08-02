@@ -4,6 +4,7 @@ return {
 		dependencies = { "nvim-tree/nvim-web-devicons" },
 		lazy = false,
 	},
+  { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
 	{
 		"nvim-lualine/lualine.nvim",
 		lazy = false,

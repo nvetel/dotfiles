@@ -24,4 +24,8 @@ require("config")
 
 -- Help inline
 local wk = require("which-key")
-wk.register(mappings, opts)
+wk.register({
+  f = {
+    name = "find"
+  }
+}, { prefix = "<leader>"})
