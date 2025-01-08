@@ -1,1 +1,2 @@
+export PATH="$PATH:/opt/nvim-linux64/bin"
 alias nvchad='XDG_CONFIG_HOME=~/nvim NVIM_APPNAME=NvChad ~/nvim.appimage'
