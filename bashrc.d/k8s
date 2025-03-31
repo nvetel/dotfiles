@@ -1,5 +1,9 @@
 alias k=kubectl
 alias krf="kubectl patch --type=json -p '[{ \"op\": \"remove\", \"path\": \"/metadata/finalizers\" }]'"
+alias kf="kubectl get all -o custom-columns=Kind:.kind,NS:.metadata.namespace,Name:.metadata.name,Finalizers:.metadata.finalizers --all-namespaces"
 
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 export KUBECONFIG=~/.kube/config
+
+# K9S
+export K9S_FEATURE_GATE_NODE_SHELL=true
