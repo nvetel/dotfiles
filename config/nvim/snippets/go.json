@@ -1,0 +1,6 @@
+{
+  "Ginkgo Describe block": {
+    "prefix": ["gd", "describe"],
+    "body": "var _ = Describe(\"$1\", func() {\n\t$2\n})"
+  }
+}
