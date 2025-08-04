@@ -15,4 +15,10 @@ return {
 		-- disable bufferline, I don't use it, and it eats space
 		{ "akinsho/bufferline.nvim", enabled = false },
 	},
+	{
+		"m4xshen/hardtime.nvim",
+		lazy = false,
+		dependencies = { "MunifTanjim/nui.nvim" },
+		opts = {},
+	},
 }
